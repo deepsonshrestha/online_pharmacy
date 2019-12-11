@@ -1,0 +1,8 @@
+[pooling]
+pool_size = 1
+pool_name = my_pool
+pool_reset_session = True
+
+[failover]
+failover = ({'port': 3306, 'pool_name': 'failA' }, {'port': 3307, 'pool_name': 'failB' },)
+
